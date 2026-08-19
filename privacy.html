@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Privacy policy — Lockout</title>
+<meta name="description" content="Lockout's privacy policy. Your data stays on your phone: no account, no developer server, no analytics, no third-party SDKs.">
+<meta name="theme-color" content="#0d0d17">
+<meta name="color-scheme" content="dark">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Lockout">
+<meta property="og:title" content="Privacy policy — Lockout">
+<meta property="og:description" content="Your data stays on your phone: no account, no developer server, no analytics, no third-party SDKs.">
+<meta property="og:image" content="assets/img/og.jpg">
+
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <a class="wordmark" href="index.html" aria-label="Lockout — home">
+      <span class="wordmark__name">Lockout</span>
+      <span class="wordmark__sub">A private contract</span>
+    </a>
+    <nav class="nav nav--plain" aria-label="Primary">
+      <a href="index.html">Back to the site</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="section">
+  <div class="shell">
+  <article class="prose">
+
+    <p class="legend">Legal</p>
+    <h1 class="h2">Privacy policy</h1>
+    <p class="prose__meta mono">Last updated 5 August 2026</p>
+
+    <p class="prose__lede">
+      Lockout is a self-control app. It is built so that <strong>your data stays on your
+      phone</strong>. The developer does not operate a server, does not receive your data,
+      and has no way to see how you use the app.
+    </p>
+
+    <h2>What the app stores, and where</h2>
+    <p>Everything below is stored <strong>only in Lockout's private storage on your device</strong>:</p>
+    <ul>
+      <li>Lapses you log (“slips”), including the tag you choose and the time.</li>
+      <li>
+        Urges you ride out on the hold-the-line timer: when you started, how long you stayed
+        with it, whether you made it to the end, and the tag. Your stats screen uses these to
+        show which hours and days are hardest for you.
+      </li>
+      <li>
+        Which apps you selected to lock. These are stored as opaque tokens provided by Apple —
+        the app cannot read the names or icons of your apps, and neither can the developer.
+      </li>
+      <li>Your lockout history and settings (durations, multiplier, break length).</li>
+      <li>The optional note you write to yourself.</li>
+      <li>
+        Step counts, workout durations, and optional body and recovery metrics read from
+        Apple Health (see below).
+      </li>
+    </ul>
+    <p>
+      Deleting the app removes all of it. There is no account, no sign-in, and no
+      developer-side copy.
+    </p>
+
+    <h2>Health and fitness data</h2>
+    <p>With your permission, Lockout reads the following from Apple Health:</p>
+    <ul>
+      <li><strong>Step count</strong>, to show how many steps remain before a lockout ends.</li>
+      <li><strong>Workouts</strong>, to check whether you completed one long enough to claim a break.</li>
+      <li>
+        <strong>Resting heart rate, heart rate variability, sleep, active energy and
+        VO<sub>2</sub> max</strong>, shown back to you in your own stats so you can see what
+        being more active is doing for you. If you wear a Whoop, Oura, Garmin or Apple Watch,
+        this is the data those devices already write into Apple Health.
+      </li>
+    </ul>
+    <p>
+      You can allow some of these and refuse others — iOS asks per type. Anything you refuse is
+      simply not shown; the rest of the app is unaffected. Lockout does not interpret these
+      figures or give health advice; it reports the numbers and how they changed.
+    </p>
+    <p>
+      We read only. Lockout never writes to Health, never stores health data in iCloud, and
+      <strong>never uses health or fitness data for advertising, marketing, or sale to
+      anyone</strong>. You can revoke access at any time in Settings → Privacy &amp; Security →
+      Health, and the rest of the app keeps working.
+    </p>
+
+    <h2>Screen Time (Family Controls)</h2>
+    <p>
+      Lockout uses Apple's Screen Time APIs to shield the apps you chose and to notice when you
+      pass a usage threshold you set for yourself. Authorization is for your own device only.
+      Apple's design means the app receives <strong>tokens, not information</strong>: it can
+      shield an app you picked, but it cannot see which apps you have installed, what you do in
+      them, or your actual usage figures.
+    </p>
+
+    <h2>Optional sync — your server, not ours</h2>
+    <p>
+      Lockout has an optional setting where you can enter the address of a server
+      <strong>you run yourself</strong>. It is blank by default and nothing is transmitted while
+      it is blank. If you fill it in, the app sends your slips, lockout windows, usage marks and
+      earned fitness unlocks to that address so you can keep your own records.
+    </p>
+    <p>
+      That server is yours. The developer does not host it, cannot access it, and receives
+      nothing. If you use the open-source backend from this project, it provides
+      <code>GET /export</code> to download everything it holds and <code>DELETE /data</code> to
+      erase it permanently.
+    </p>
+
+    <h2>What we never do</h2>
+    <ul>
+      <li>No analytics, telemetry, or crash-reporting services.</li>
+      <li>No advertising and no ad identifiers.</li>
+      <li>No tracking, and no sharing of data with data brokers or any third party.</li>
+      <li>No third-party SDKs of any kind — the app has zero external dependencies.</li>
+    </ul>
+
+    <h2>Children</h2>
+    <p>
+      Lockout is designed for adults managing their own behaviour. It is not a parental-control
+      product and has no features for monitoring another person.
+    </p>
+
+    <h2>Changes and contact</h2>
+    <p>
+      Material changes to this policy will be published at this address. Questions:
+      <a href="mailto:kyansukhram@gmail.com">kyansukhram@gmail.com</a>.
+    </p>
+
+  </article>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__grid">
+    <div class="footer__brand">
+      <span class="wordmark__name">Lockout</span>
+      <p>A private contract, kept by your own phone.</p>
+    </div>
+    <nav class="footer__links" aria-label="Footer">
+      <a href="index.html">Home</a>
+      <a href="mailto:kyansukhram@gmail.com">Contact</a>
+    </nav>
+    <p class="footer__legal">
+      An independent app. Not affiliated with, endorsed by, or sponsored by Apple.
+      Apple, Apple Health, Apple Watch, App Store, Screen Time and TestFlight are trademarks
+      of Apple Inc.
+    </p>
+  </div>
+</footer>
+</body>
+</html>

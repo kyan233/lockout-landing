@@ -1,0 +1,43 @@
+/* Self-hosted latin subsets.
+   Instrument Serif, Geist and Geist Mono are licensed under the
+   SIL Open Font License 1.1 — see assets/fonts/OFL.txt.
+
+   Vendored rather than linked to fonts.googleapis.com on purpose: Lockout's
+   privacy policy promises no third-party requests, and a landing page that
+   hands every visitor's IP to a font CDN would be the first thing to break
+   that promise. These four files are the whole webfont payload — 81 KB. */
+
+/* Display — editorial serif, headlines and the wordmark. */
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/instrument-serif-normal-400.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/instrument-serif-italic-400.woff2') format('woff2');
+}
+
+/* Interface — variable, so one file covers every weight the page uses. */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('fonts/geist-normal-400.woff2') format('woff2');
+}
+
+/* Data — step counts, durations, anything that reads as a measurement. */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('fonts/geist-mono-normal-400.woff2') format('woff2');
+}

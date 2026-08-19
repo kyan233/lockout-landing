@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lockout — your phone should not be stronger than you</title>
+<meta name="description" content="Tap “I slipped” and the apps you chose go dark for 24 hours, enforced by Apple's Screen Time. No early exit. The way back is movement: walk to your step goal to end it, or bank a workout for a timed break.">
+<meta name="theme-color" content="#0d0d17">
+<meta name="color-scheme" content="dark">
+
+<link rel="canonical" href="https://lockout.automateedge.ai/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Lockout">
+<meta property="og:title" content="Lockout — your phone should not be stronger than you">
+<meta property="og:description" content="Tap “I slipped” and the apps you chose go dark for 24 hours. No early exit. The way back is movement.">
+<meta property="og:image" content="assets/img/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Lockout — a private contract. The lockout screen showing a countdown with no early exit.">
+<meta property="og:url" content="https://lockout.automateedge.ai/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Lockout — your phone should not be stronger than you">
+<meta name="twitter:description" content="Tap “I slipped” and the apps you chose go dark for 24 hours. No early exit. The way back is movement.">
+<meta name="twitter:image" content="assets/img/og.jpg">
+
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<link rel="preload" href="assets/fonts/instrument-serif-normal-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/geist-normal-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/styles.css">
+
+<!-- Scroll reveals start at opacity 0, which is only safe if something is
+     guaranteed to turn them back on. This marks the document as scripted
+     before first paint, so a failed or blocked main.js leaves a fully
+     readable page instead of a blank one. -->
+<script>document.documentElement.classList.add('js');</script>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="masthead" id="top">
+  <div class="shell masthead__inner">
+    <a class="wordmark" href="#top" aria-label="Lockout — home">
+      <span class="wordmark__name">Lockout</span>
+      <span class="wordmark__sub">A private contract</span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Primary">
+      <a href="#problem">The problem</a>
+      <a href="#how">How it works</a>
+      <a href="#exit">The exit</a>
+      <a href="#app">The app</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn--sm btn--primary" href="#join">Early access</a>
+    </nav>
+
+    <button class="navtoggle" id="navtoggle" type="button"
+            aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+      <span class="navtoggle__bar"></span>
+      <span class="navtoggle__bar"></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ─────────────────────────────  HERO  ───────────────────────────── -->
+  <section class="hero">
+    <div class="shell hero__grid">
+
+      <div class="hero__copy">
+        <p class="legend legend--mint" data-reveal style="--i:0">
+          <span class="dot" aria-hidden="true"></span>iPhone · Self-imposed · No account
+        </p>
+
+        <h1 class="hero__title" data-reveal style="--i:1">
+          Your phone should not be
+          <em>stronger</em> than you.
+        </h1>
+
+        <p class="lede" data-reveal style="--i:2">
+          Catch yourself, tap <strong>I slipped</strong>, and the apps you chose go dark for
+          24 hours — with no early exit and one way back: movement.
+        </p>
+
+        <div class="cta-row" data-reveal style="--i:3">
+          <a class="btn btn--primary" href="#join" data-magnetic>Join the early access list</a>
+          <a class="btn btn--ghost" href="#how">See how it works</a>
+        </div>
+
+        <p class="trustline" data-reveal style="--i:4">
+          <svg class="trustline__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M12 2.6 4.5 5.8v6c0 4.6 3.2 8.3 7.5 9.6 4.3-1.3 7.5-5 7.5-9.6v-6Z"
+                  fill="none" stroke="currentColor" stroke-width="1.5"
+                  stroke-linejoin="round"/>
+            <path d="m8.8 12.1 2.3 2.3 4.2-4.6" fill="none" stroke="currentColor"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Blocking is enforced by Apple's Screen Time (Family Controls). Lockout receives
+          tokens, not information — it cannot see which apps you have installed or what you
+          do inside them.
+        </p>
+      </div>
+
+      <div class="hero__device" data-reveal style="--i:3">
+        <div class="device" data-float>
+          <div class="device__frame">
+            <img class="device__screen"
+                 src="assets/img/screen-lockout.png"
+                 width="460" height="1000" fetchpriority="high" decoding="async"
+                 alt="Lockout running on iPhone during an active lockout: a countdown reading 08:12:51, the line “No early exit”, the user's own note “I want my mornings back”, seven shielded apps, and a step counter reading 0 of 10,000.">
+          </div>
+        </div>
+        <p class="device__caption">
+          <span class="mono">Fig. 01</span> — a sentence in progress, 8 h 12 m remaining
+        </p>
+      </div>
+
+    </div>
+
+    <div class="shell">
+      <ul class="ticker" aria-label="What Lockout does not do">
+        <li>No streak guilt</li>
+        <li>No leaderboard</li>
+        <li>No accountability partner</li>
+        <li>No subscription to unlock your own phone</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ────────────────────────────  PROBLEM  ─────────────────────────── -->
+  <section class="section problem" id="problem">
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Instagram</span><span>·</span><span>TikTok</span><span>·</span>
+        <span>YouTube</span><span>·</span><span>X</span><span>·</span>
+        <span>Reddit</span><span>·</span><span>Snapchat</span><span>·</span>
+        <span>Instagram</span><span>·</span><span>TikTok</span><span>·</span>
+        <span>YouTube</span><span>·</span><span>X</span><span>·</span>
+        <span>Reddit</span><span>·</span><span>Snapchat</span><span>·</span>
+      </div>
+    </div>
+
+    <div class="shell problem__grid">
+      <div class="problem__head">
+        <p class="legend">01 — The problem</p>
+        <h2 class="h2" data-reveal>
+          Attention doesn't get stolen all at once. It <em>leaks</em>.
+        </h2>
+      </div>
+
+      <div class="problem__body">
+        <p data-reveal style="--i:0">
+          You picked the phone up to check the time. Eleven minutes later you are deep in a
+          feed you did not choose, and you cannot point to the moment you decided to open it —
+          because there wasn't one. Your thumb got there first.
+        </p>
+        <p data-reveal style="--i:1">
+          That gap between intending and doing is not a character flaw. It is the product.
+          Whole teams are paid to make it disappear, and they are good at their jobs.
+        </p>
+        <p class="pull" data-reveal style="--i:2">
+          What breaks is not your afternoon. It is the promise you made yourself this morning.
+        </p>
+        <p data-reveal style="--i:3">
+          Lockout does not try to make you want it less. It makes the next hour expensive,
+          and it does that at the level of the operating system, where wanting it less
+          stops being the deciding factor.
+        </p>
+
+        <ul class="moments" aria-label="Moments the reach happens">
+          <li data-reveal style="--i:0">In the lift.</li>
+          <li data-reveal style="--i:1">Waiting for the kettle.</li>
+          <li data-reveal style="--i:2">The forty seconds between sets.</li>
+          <li data-reveal style="--i:3">Mid-sentence, mid-conversation.</li>
+          <li data-reveal style="--i:4">3:14 a.m.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ────────────────────────────  HOW IT WORKS  ────────────────────── -->
+  <section class="section how" id="how">
+    <div class="shell">
+      <div class="sectionhead">
+        <p class="legend">02 — How it works</p>
+        <h2 class="h2" data-reveal>Three moves. Then it is out of your hands.</h2>
+      </div>
+
+      <ol class="steps">
+
+        <li class="step" data-reveal>
+          <div class="step__meta">
+            <span class="step__num mono">01</span>
+            <span class="step__rail" aria-hidden="true"></span>
+          </div>
+          <div class="step__body">
+            <h3 class="h3">Choose what gets blocked</h3>
+            <p>
+              Pick the apps and categories from Apple's own picker. Lockout stores an opaque
+              token for each one — it never learns the name, the icon, or a minute of your
+              usage. Then set the terms: how long a sentence runs, and how many steps end it.
+            </p>
+          </div>
+          <div class="step__figure">
+            <div class="chips" aria-hidden="true">
+              <span class="chip chip--on">Instagram</span>
+              <span class="chip chip--on">TikTok</span>
+              <span class="chip chip--on">YouTube</span>
+              <span class="chip">X</span>
+              <span class="chip chip--on">Reddit</span>
+              <span class="chip">Snapchat</span>
+            </div>
+            <p class="figcap mono">4 selected · stored as tokens</p>
+          </div>
+        </li>
+
+        <li class="step step--offset" data-reveal>
+          <div class="step__meta">
+            <span class="step__num mono step__num--ember">02</span>
+            <span class="step__rail" aria-hidden="true"></span>
+          </div>
+          <div class="step__body">
+            <h3 class="h3">Tap “I slipped”</h3>
+            <p>
+              You are the one who logs it — Lockout is not watching. The instant you do, the
+              shields go up and a countdown starts on your Lock Screen. Twenty-four hours by
+              default. Nothing inside the app will hand them back.
+            </p>
+          </div>
+          <div class="step__figure">
+            <div class="slipcard" aria-hidden="true">
+              <p class="legend legend--ember"><span class="dot dot--ember"></span>Sentence in progress</p>
+              <p class="slipcard__clock mono">23:59:58</p>
+              <p class="slipcard__note">No early exit</p>
+            </div>
+            <p class="figcap mono">Default 24 h · 1 h and 16 min options exist</p>
+          </div>
+        </li>
+
+        <li class="step" data-reveal>
+          <div class="step__meta">
+            <span class="step__num mono step__num--mint">03</span>
+          </div>
+          <div class="step__body">
+            <h3 class="h3">Earn your way back through movement</h3>
+            <p>
+              Walking to your step goal ends the sentence outright. A recorded workout of
+              thirty minutes or more buys one timed break instead — and when the break runs
+              out, the shields come back on by themselves.
+            </p>
+          </div>
+          <div class="step__figure">
+            <div class="meter" aria-hidden="true">
+              <div class="meter__head">
+                <span class="mono">6,240</span>
+                <span class="mono meter__goal">/ 10,000</span>
+              </div>
+              <div class="meter__track"><div class="meter__fill" data-meter="62"></div></div>
+              <p class="figcap mono">steps since the lockout began</p>
+            </div>
+          </div>
+        </li>
+
+      </ol>
+    </div>
+  </section>
+
+  <!-- ────────────────────────  EXERCISE UNLOCK  ─────────────────────── -->
+  <section class="section exit" id="exit">
+    <div class="shell">
+      <div class="sectionhead sectionhead--wide">
+        <p class="legend legend--mint">03 — The exit</p>
+        <h2 class="h2" data-reveal>There is one way out,<br>and it is on <em>foot</em>.</h2>
+        <p class="lede lede--tight" data-reveal style="--i:1">
+          Most blockers sell you a five-minute override and call it flexibility. Lockout has
+          no override. The only thing that moves the clock is your body — which is why the
+          exit is not a reward animation. It is the mechanism.
+        </p>
+      </div>
+
+      <div class="route" data-reveal>
+        <svg class="route__svg" viewBox="0 0 1200 200" preserveAspectRatio="none"
+             role="img" aria-label="A route line rising from the moment of the slip to the point the sentence ends.">
+          <path class="route__ghost" d="M0,168 C180,168 240,150 360,132 C500,111 560,120 700,92 C840,64 940,44 1200,22"
+                fill="none" stroke="currentColor" stroke-width="1"/>
+          <path class="route__line" d="M0,168 C180,168 240,150 360,132 C500,111 560,120 700,92 C840,64 940,44 1200,22"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <div class="route__marks">
+          <span class="route__mark"><em class="mono">00:00</em>the slip</span>
+          <span class="route__mark"><em class="mono">2,000</em>first mile</span>
+          <span class="route__mark"><em class="mono">6,240</em>still short</span>
+          <span class="route__mark route__mark--end"><em class="mono">10,000</em>sentence ends</span>
+        </div>
+      </div>
+
+      <div class="paths">
+        <article class="path" data-reveal style="--i:0">
+          <p class="legend legend--mint">Path A</p>
+          <h3 class="h3">Walk it off</h3>
+          <p>
+            Steps counted from the moment you logged the slip are measured against the goal
+            you committed to. Reach it and the lockout ends there and then — not at the top
+            of the hour, not after a review. The apps come straight back.
+          </p>
+          <dl class="spec">
+            <div><dt>Default goal</dt><dd class="mono">10,000 steps</dd></div>
+            <div><dt>Configurable</dt><dd class="mono">2,000 – 15,000</dd></div>
+            <div><dt>Counted from</dt><dd class="mono">the slip, not midnight</dd></div>
+          </dl>
+        </article>
+
+        <article class="path path--b" data-reveal style="--i:1">
+          <p class="legend legend--violet">Path B</p>
+          <h3 class="h3">Bank a workout, buy a break</h3>
+          <p>
+            A recorded workout long enough to qualify can be claimed for one timed break.
+            The shields drop, a second timer starts, and the operating system puts them back
+            when it expires — whether or not you reopen Lockout.
+          </p>
+          <dl class="spec">
+            <div><dt>Qualifying workout</dt><dd class="mono">30 min or longer</dd></div>
+            <div><dt>Break earned</dt><dd class="mono">30 min (configurable)</dd></div>
+            <div><dt>Claims per workout</dt><dd class="mono">one</dd></div>
+          </dl>
+        </article>
+      </div>
+
+      <div class="terms" data-reveal>
+        <p class="legend">The small print, which is the whole point</p>
+        <ul class="terms__list">
+          <li>
+            <span class="mono terms__k">Sensor only</span>
+            Steps typed into the Health app by hand are ignored. Only sensor-recorded
+            samples count toward getting out.
+          </li>
+          <li>
+            <span class="mono terms__k">Frozen terms</span>
+            Your goal and break length are locked in the second the sentence starts.
+            Lowering them mid-lockout does nothing at all.
+          </li>
+          <li>
+            <span class="mono terms__k">One claim</span>
+            The same workout cannot be cashed twice, even when a watch and a phone both
+            recorded it.
+          </li>
+          <li>
+            <span class="mono terms__k">Reconciled</span>
+            When two devices log the same walk, Lockout resolves them to one figure instead
+            of adding them together — so the number that frees you is the number you walked.
+          </li>
+        </ul>
+        <p class="disclaim">
+          Lockout is not a fitness or medical product. It counts steps and workout minutes to
+          decide when a block ends, and reports figures Apple Health already holds. It does
+          not assess your health, offer training advice, or make claims about outcomes.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ────────────────────────  PRODUCT PREVIEW  ─────────────────────── -->
+  <section class="section preview" id="app">
+    <div class="shell">
+      <div class="sectionhead">
+        <p class="legend">04 — The app</p>
+        <h2 class="h2" data-reveal>Built to be looked at once, then obeyed.</h2>
+      </div>
+    </div>
+
+    <div class="gallery" role="region" aria-label="App screenshots" tabindex="0">
+      <figure class="shot">
+        <div class="device device--sm">
+          <div class="device__frame">
+            <img src="assets/img/screen-locked.png" width="414" height="900"
+                 loading="lazy" decoding="async"
+                 alt="The lockout screen: a red countdown above the words “no early exit”, the reason the user wrote to themselves, and a step meter counting down the way out.">
+          </div>
+        </div>
+        <figcaption>
+          <span class="mono">01</span> Locked
+          <span>The sentence, the reason you wrote, and the steps left to run it down.</span>
+        </figcaption>
+      </figure>
+
+      <figure class="shot">
+        <div class="device device--sm">
+          <div class="device__frame">
+            <img src="assets/img/screen-clean.png" width="414" height="900"
+                 loading="lazy" decoding="async" alt="The clean-day screen: a green ring showing days clear, your record and slips, the apps you chose, and hold-the-line.">
+          </div>
+        </div>
+        <figcaption>
+          <span class="mono">02</span> Clean
+          <span>The day-to-day screen when nothing is shielded: streak, chosen apps, hold-the-line.</span>
+        </figcaption>
+      </figure>
+
+      <figure class="shot">
+        <div class="device device--sm">
+          <div class="device__frame">
+            <img src="assets/img/screen-record.png" width="414" height="900"
+                 loading="lazy" decoding="async" alt="The record: your danger window and the wave, drawn from your own slips and urges over time.">
+          </div>
+        </div>
+        <figcaption>
+          <span class="mono">03</span> The record
+          <span>Slips and urges over time, and the hours of the day that are hardest for you.</span>
+        </figcaption>
+      </figure>
+
+      <figure class="shot">
+        <div class="device device--sm">
+          <div class="device__frame">
+            <img src="assets/img/screen-exit.png" width="414" height="900"
+                 loading="lazy" decoding="async" alt="Earn your way out: steps counting toward the goal that ends a lockout, and a workout waiting to be claimed for a break.">
+          </div>
+        </div>
+        <figcaption>
+          <span class="mono">04</span> The exit
+          <span>Steps against the goal, and any workout waiting to be claimed for a break.</span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="shell">
+      <p class="galleryhint mono">Scroll sideways · four screens from the app</p>
+    </div>
+  </section>
+
+  <!-- ──────────────────────────  PHILOSOPHY  ────────────────────────── -->
+  <section class="section creed">
+    <div class="shell">
+      <p class="legend">05 — What this is</p>
+      <ul class="creed__list">
+        <li data-reveal style="--i:0"><span class="mono">01</span><span>No easy exit.</span></li>
+        <li data-reveal style="--i:1"><span class="mono">02</span><span>No motivational spam.</span></li>
+        <li data-reveal style="--i:2"><span class="mono">03</span><span>No shame.</span></li>
+        <li data-reveal style="--i:3"><span class="mono">04</span><em>Just a contract with yourself.</em></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ────────────────────────  ATHLETES / HEALTH  ───────────────────── -->
+  <section class="section athletes">
+    <div class="shell athletes__grid">
+      <div class="athletes__copy">
+        <p class="legend">06 — If you already train</p>
+        <h2 class="h2" data-reveal>The data is already on your wrist.</h2>
+        <p data-reveal style="--i:1">
+          If you wear an Apple Watch, a Whoop, an Oura ring or a Garmin, those devices
+          already write into Apple Health. Lockout can use the data available there —
+          read-only, and only the types you agree to.
+        </p>
+        <p data-reveal style="--i:2">
+          Two of them do real work: steps end a lockout, and workouts buy a break. The rest
+          are reported back to you in your own record, so the argument the app is making —
+          that moving more is worth something — is one you can check rather than take on
+          faith.
+        </p>
+        <p class="footnote" data-reveal style="--i:3">
+          iOS asks per data type and you can refuse any of them; what you refuse is simply
+          shown as “—”, and everything else keeps working. Availability depends on what your
+          devices actually write to Apple Health, so this is not a guarantee of
+          compatibility with any particular wearable. Note that Apple Health's heart-rate
+          variability is SDNN, which is a different measurement from the sleep-window figure
+          Whoop shows — the two are not expected to match.
+        </p>
+      </div>
+
+      <div class="athletes__data" data-reveal>
+        <p class="legend legend--mint">Read from Apple Health</p>
+        <dl class="readout">
+          <div><dt>Step count</dt><dd class="mono mono--mint">ends a lockout</dd></div>
+          <div><dt>Workouts</dt><dd class="mono mono--mint">earns a break</dd></div>
+          <div><dt>Resting heart rate</dt><dd class="mono">reported</dd></div>
+          <div><dt>Heart rate variability</dt><dd class="mono">reported · SDNN</dd></div>
+          <div><dt>Sleep</dt><dd class="mono">reported</dd></div>
+          <div><dt>Active energy</dt><dd class="mono">reported</dd></div>
+          <div><dt>VO<sub>2</sub> max</dt><dd class="mono">reported</dd></div>
+        </dl>
+        <p class="readout__foot">
+          Read only. Lockout never writes to Health, never puts health data in iCloud, and
+          never uses it for advertising or sale.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ──────────────────────────────  FAQ  ───────────────────────────── -->
+  <section class="section faq" id="faq">
+    <div class="shell faq__grid">
+      <div class="faq__head">
+        <p class="legend">07 — Questions</p>
+        <h2 class="h2" data-reveal>Straight answers.</h2>
+      </div>
+
+      <div class="faq__list">
+        <details name="faq">
+          <summary>What happens when I tap “I slipped”?</summary>
+          <div class="faq__answer">
+            <p>
+              The shields go up immediately — the apps you selected stop opening, enforced by
+              Apple's Screen Time. A countdown starts and appears on your Lock Screen, and the
+              slip is written to your own history on the device. Twenty-four hours is the
+              default; one hour and a sixteen-minute test setting also exist, so you can prove
+              to yourself that the automatic unlock works before you trust it with a full day.
+            </p>
+          </div>
+        </details>
+
+        <details name="faq">
+          <summary>Can I unlock apps early?</summary>
+          <div class="faq__answer">
+            <p>
+              There is no override button, and no amount of tapping produces one. Two things
+              end a lockout: reaching the step goal you committed to, which ends it outright,
+              or claiming a qualifying workout, which buys a single timed break before the
+              shields return on their own.
+            </p>
+            <p>
+              The settings that decide those terms are frozen the moment a sentence starts, so
+              lowering the goal halfway through changes nothing. One honest limit: iOS lets you
+              revoke Screen Time permission in Settings at any time, and no app can prevent
+              that. Lockout notices when it happens and keeps the receipt in your record.
+            </p>
+          </div>
+        </details>
+
+        <details name="faq">
+          <summary>Does Lockout work without a server?</summary>
+          <div class="faq__answer">
+            <p>
+              Yes — completely. There is no account, no sign-in, and no server operated by the
+              developer. Everything runs on your phone.
+            </p>
+            <p>
+              There is one optional setting where you can enter the address of a server
+              <em>you</em> run yourself if you want your own long-term copy of the data. It is
+              blank by default and nothing is transmitted while it is blank. The backend for it
+              is open source and lives in the same repository as the app.
+            </p>
+          </div>
+        </details>
+
+        <details name="faq">
+          <summary>What permissions are required?</summary>
+          <div class="faq__answer">
+            <p>
+              <strong>Screen Time (Family Controls)</strong> is required — it is what actually
+              blocks the apps. Apple's design means Lockout is handed opaque tokens rather than
+              information: it can shield an app you picked, but it cannot see which apps you
+              have or what you do in them.
+            </p>
+            <p>
+              <strong>Apple Health</strong> is optional and read-only, and is only needed for
+              the exercise exit. iOS asks per data type and you can refuse any of them.
+              Notifications are optional too — they carry the countdown and tell you when a
+              break is about to end.
+            </p>
+          </div>
+        </details>
+
+        <details name="faq">
+          <summary>What data is stored?</summary>
+          <div class="faq__answer">
+            <p>
+              Your slips and the tags you choose, the urges you ride out on the timer, your
+              lockout history and settings, the note you wrote yourself, the apps you selected
+              as opaque tokens, and any step, workout or recovery figures read from Apple
+              Health. All of it stays in Lockout's private storage on your device. Deleting the
+              app removes all of it.
+            </p>
+            <p>
+              There are no analytics, no crash reporting, no advertising identifiers and no
+              third-party SDKs of any kind. The full text is in the
+              <a href="privacy.html">privacy policy</a>.
+            </p>
+          </div>
+        </details>
+
+        <details name="faq">
+          <summary>Is there a free or paid plan?</summary>
+          <div class="faq__answer">
+            <p>
+              The whole lockout mechanic is free, forever: choosing your apps, signing a slip,
+              walking your way out, the auto-ban, holding the line. Locking and unlocking your
+              own phone is never the part you pay for.
+            </p>
+            <p>
+              <strong>Lockout Plus</strong> is optional — £1.99 a month or £9.99 once — and it
+              unlocks the record: your danger window, where your urges break and your odds of
+              riding past them, what a slip has cost you, the time you've reclaimed, and how your
+              body reads on clean days versus the mornings after. Analysis, never the blocking.
+              Let a subscription lapse and you lose the charts, never a way out of a shield.
+            </p>
+          </div>
+        </details>
+
+        <details name="faq">
+          <summary>Is Family Controls approval required for the App&nbsp;Store version?</summary>
+          <div class="faq__answer">
+            <p>
+              Yes. Shielding another app's content needs a distribution entitlement that Apple
+              grants case by case, and without it a Screen Time app cannot ship. Lockout's was
+              approved on 6 August 2026, so the blocking you have read about here is the real
+              mechanism rather than a plan.
+            </p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ────────────────────────────  FINAL CTA  ───────────────────────── -->
+  <section class="section join" id="join">
+    <div class="shell join__grid">
+      <div class="join__copy">
+        <h2 class="h2 h2--display" data-reveal>
+          Your phone should not be<br>stronger than you.
+        </h2>
+        <p class="lede" data-reveal style="--i:1">
+          Lockout is in testing on TestFlight and is not on the App Store yet. Leave an
+          address and you will hear when there is a build worth your time — nothing else.
+        </p>
+      </div>
+
+      <div class="join__form">
+        <!-- No backend is wired up. The handler in main.js explains that in the UI
+             rather than faking a success state. -->
+        <form id="waitlist" novalidate data-endpoint="">
+          <div class="field">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" inputmode="email"
+                   autocomplete="email" placeholder="you@example.com"
+                   aria-describedby="email-help email-error">
+            <p class="field__help" id="email-help">
+              Used only to tell you when early access opens.
+            </p>
+            <p class="field__error" id="email-error" role="alert" hidden></p>
+          </div>
+
+          <button class="btn btn--primary btn--block" type="submit" data-magnetic>
+            Start your contract
+          </button>
+
+          <p class="field__status" id="form-status" role="status" aria-live="polite" hidden></p>
+
+          <p class="notconnected">
+            <span class="mono">Placeholder</span>
+            This form is not connected to a mailing list yet — no address is stored or sent
+            anywhere. Until it is wired up, email
+            <a href="mailto:kyansukhram@gmail.com?subject=Lockout%20early%20access">kyansukhram@gmail.com</a>
+            and you will be added by hand.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="shell footer__grid">
+    <div class="footer__brand">
+      <span class="wordmark__name">Lockout</span>
+      <p>A private contract, kept by your own phone.</p>
+    </div>
+
+    <nav class="footer__links" aria-label="Footer">
+      <a href="privacy.html">Privacy policy</a>
+      <a href="mailto:kyansukhram@gmail.com">Contact</a>
+      <a href="#top">Back to top</a>
+    </nav>
+
+    <p class="footer__legal">
+      An independent app. Not affiliated with, endorsed by, or sponsored by Apple.
+      Apple, Apple Health, Apple Watch, App Store, Screen Time and TestFlight are
+      trademarks of Apple Inc. Instagram, TikTok, YouTube, X, Reddit, Snapchat, Whoop,
+      Oura and Garmin are named only to describe apps and devices you may choose to use
+      with Lockout; their trademarks belong to their respective owners.
+    </p>
+  </div>
+</footer>
+
+<script src="assets/main.js" defer></script>
+</body>
+</html>

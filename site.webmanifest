@@ -1,0 +1,13 @@
+{
+  "name": "Lockout",
+  "short_name": "Lockout",
+  "description": "Break compulsive phone habits. Tap “I slipped”, lose the apps for 24 hours, earn your way back through movement.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0d0d17",
+  "theme_color": "#0d0d17",
+  "icons": [
+    { "src": "assets/img/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "assets/img/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
