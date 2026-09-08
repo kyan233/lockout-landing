@@ -16,8 +16,8 @@
      which bio sent the install: lockout.automateedge.ai/?s=ig_bio → ct=ig_bio.
      PT is the App Analytics provider token; until it is set the tag is inert
      but harmless. One constant to fill, no markup to touch. */
-  var STORE = 'https://apps.apple.com/gb/app/lockout-break-the-habit/id6798917776';
-  var PT = '';
+  var STORE = 'https://apps.apple.com/app/apple-store/id6798917776';
+  var PT = '129260603';
   var source = (new URLSearchParams(window.location.search).get('s') || 'web').replace(/[^a-z0-9_]/gi, '').slice(0, 24) || 'web';
   var storeHref = STORE + '?' + (PT ? 'pt=' + PT + '&' : '') + 'ct=' + source + '&mt=8';
   var storeLinks = document.querySelectorAll('[data-store]');
