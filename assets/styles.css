@@ -1112,3 +1112,15 @@ details[open] .faq__answer { animation: unfold 0.45s var(--ease); }
   .route__line  { stroke-dashoffset: 0; }
   .btn { --pull-x: 0px !important; --pull-y: 0px !important; }
 }
+
+
+/* Fixed store bar, phones only; shown by main.js once the hero buttons leave view. */
+.stickybar {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
+  padding: .7rem 1rem calc(.7rem + env(safe-area-inset-bottom));
+  background: rgba(10, 10, 14, .94);
+  border-top: 1px solid rgba(255, 255, 255, .08);
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+}
+.stickybar[hidden] { display: none; }
+@media (min-width: 641px) { .stickybar { display: none !important; } }

@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="Lockout">
 <meta property="og:title" content="Lockout — your phone should not be stronger than you">
 <meta property="og:description" content="Tap “I slipped” and the apps you chose go dark for 24 hours. No early exit. The way back is movement.">
-<meta property="og:image" content="assets/img/og.jpg">
+<meta property="og:image" content="https://lockout.automateedge.ai/assets/img/og.jpg">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -31,7 +31,7 @@
 <link rel="preload" href="assets/fonts/instrument-serif-normal-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/geist-normal-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/fonts.css">
-<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/styles.css?v=20260908">
 
 <!-- Scroll reveals start at opacity 0, which is only safe if something is
      guaranteed to turn them back on. This marks the document as scripted
@@ -57,7 +57,7 @@
       <a href="#exit">The exit</a>
       <a href="#app">The app</a>
       <a href="#faq">FAQ</a>
-      <a class="btn btn--sm btn--primary" href="#join">Early access</a>
+      <a class="btn btn--sm btn--primary" href="https://apps.apple.com/gb/app/lockout-break-the-habit/id6798917776?ct=web&mt=8" data-store>App Store</a>
     </nav>
 
     <button class="navtoggle" id="navtoggle" type="button"
@@ -76,23 +76,24 @@
 
       <div class="hero__copy">
         <p class="legend legend--mint" data-reveal style="--i:0">
-          <span class="dot" aria-hidden="true"></span>iPhone · Self-imposed · No account
+          <span class="dot" aria-hidden="true"></span>iPhone · Free to lock, free to unlock · No account
         </p>
 
         <h1 class="hero__title" data-reveal style="--i:1">
-          Your phone should not be
-          <em>stronger</em> than you.
+          Slip, and your apps go dark for 24 hours.
+          <em>No unlock button.</em>
         </h1>
 
         <p class="lede" data-reveal style="--i:2">
-          Catch yourself, tap <strong>I slipped</strong>, and the apps you chose go dark for
-          24 hours — with no early exit and one way back: movement.
+          The way out early is <strong>10,000 steps</strong>, on foot. You cannot pay to
+          unlock your own phone, and you never will.
         </p>
 
         <div class="cta-row" data-reveal style="--i:3">
-          <a class="btn btn--primary" href="#join" data-magnetic>Join the early access list</a>
-          <a class="btn btn--ghost" href="#how">See how it works</a>
+          <a class="btn btn--primary" href="https://apps.apple.com/gb/app/lockout-break-the-habit/id6798917776?ct=web&mt=8" data-store data-magnetic>Get Lockout on the App Store</a>
+          <a class="btn btn--ghost" href="#how">How it works</a>
         </div>
+        <p class="figcap mono" data-reveal style="--i:3">Free on the UK App Store · iPhone only</p>
 
         <p class="trustline" data-reveal style="--i:4">
           <svg class="trustline__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
@@ -102,9 +103,9 @@
             <path d="m8.8 12.1 2.3 2.3 4.2-4.6" fill="none" stroke="currentColor"
                   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-          Blocking is enforced by Apple's Screen Time (Family Controls). Lockout receives
-          tokens, not information — it cannot see which apps you have installed or what you
-          do inside them.
+          Live on the UK App Store since 4 September 2026.<br>
+          No account. No analytics. Nothing leaves your phone.<br>
+          Built by one person who cannot unlock his own phone either.
         </p>
       </div>
 
@@ -240,7 +241,7 @@
               <p class="slipcard__clock mono">23:59:58</p>
               <p class="slipcard__note">No early exit</p>
             </div>
-            <p class="figcap mono">Default 24 h · 1 h and 16 min options exist</p>
+            <p class="figcap mono">Default 24 h · 1 h to 12 h to build up to it</p>
           </div>
         </li>
 
@@ -510,8 +511,8 @@
               The shields go up immediately — the apps you selected stop opening, enforced by
               Apple's Screen Time. A countdown starts and appears on your Lock Screen, and the
               slip is written to your own history on the device. Twenty-four hours is the
-              default; one hour and a sixteen-minute test setting also exist, so you can prove
-              to yourself that the automatic unlock works before you trust it with a full day.
+              default; shorter terms from one hour to twelve exist, so you can prove to
+              yourself that the automatic unlock works before you trust it with a full day.
             </p>
           </div>
         </details>
@@ -595,11 +596,16 @@
               own phone is never the part you pay for.
             </p>
             <p>
-              <strong>Lockout Plus</strong> is optional — £1.99 a month or £9.99 once — and it
-              unlocks the record: your danger window, where your urges break and your odds of
-              riding past them, what a slip has cost you, the time you've reclaimed, and how your
-              body reads on clean days versus the mornings after. Analysis, never the blocking.
-              Let a subscription lapse and you lose the charts, never a way out of a shield.
+              <strong>Lockout Plus</strong> is optional — 99p a week, the first seven days
+              free, or £19.99 once — and it makes the contract hold. Sealed
+              contracts survive deleting and reinstalling the app, keep it on your phone while
+              they run, and shrug off a changed clock; on iOS 26.4 even Screen Time can be sealed
+              behind a passcode you hand to someone else. Standing orders send the apps dark on a
+              schedule — nights, mornings, weekends — without waiting for a slip. The record reads
+              your own history back to you as verdicts. Plus makes a lock harder to escape; it
+              never makes one easier. Let a subscription lapse and the seal simply comes off — you
+              lose the extra grip, never a way out of a shield. The free week becomes a paid week
+              unless you cancel; the lifetime never renews.
             </p>
           </div>
         </details>
@@ -610,8 +616,9 @@
             <p>
               Yes. Shielding another app's content needs a distribution entitlement that Apple
               grants case by case, and without it a Screen Time app cannot ship. Lockout's was
-              approved on 6 August 2026, so the blocking you have read about here is the real
-              mechanism rather than a plan.
+              approved on 6 August 2026, and the app has been on the App Store since
+              4 September, so the blocking you have read about here is the shipping mechanism
+              rather than a plan.
             </p>
           </div>
         </details>
@@ -627,43 +634,27 @@
           Your phone should not be<br>stronger than you.
         </h2>
         <p class="lede" data-reveal style="--i:1">
-          Lockout is in testing on TestFlight and is not on the App Store yet. Leave an
-          address and you will hear when there is a build worth your time — nothing else.
+          Live on the UK App Store since 4 September. Locking and unlocking never costs
+          anything. Plus, if you want the contract sealed, opens with seven days free, then
+          99p a week unless you cancel, or £19.99 once.
         </p>
       </div>
 
       <div class="join__form">
-        <!-- No backend is wired up. The handler in main.js explains that in the UI
-             rather than faking a success state. -->
-        <form id="waitlist" novalidate data-endpoint="https://formsubmit.co/ajax/kyansukhram@gmail.com">
-          <div class="field">
-            <label for="email">Email address</label>
-            <input id="email" name="email" type="email" inputmode="email"
-                   autocomplete="email" placeholder="you@example.com"
-                   aria-describedby="email-help email-error">
-            <p class="field__help" id="email-help">
-              Used only to tell you when early access opens.
-            </p>
-            <p class="field__error" id="email-error" role="alert" hidden></p>
-          </div>
-
-          <button class="btn btn--primary btn--block" type="submit" data-magnetic>
-            Start your contract
-          </button>
-
-          <p class="field__status" id="form-status" role="status" aria-live="polite" hidden></p>
-
-          <p class="notconnected">
-            <span class="mono">Private</span>
-            One address, one purpose: to tell you the day early access opens. No list rental,
-            no other mail, unsubscribe by ignoring it. Trouble with the form? Email
-            <a href="mailto:kyansukhram@gmail.com?subject=Lockout%20early%20access">kyansukhram@gmail.com</a>.
-          </p>
-        </form>
+        <a class="btn btn--primary btn--block" href="https://apps.apple.com/gb/app/lockout-break-the-habit/id6798917776?ct=web&mt=8" data-store data-magnetic>Get Lockout on the App Store</a>
+        <p class="notconnected">
+          <span class="mono">Free</span>
+          iPhone, iOS 17 or later. No account to make, nothing to enter. Choose your apps,
+          sign once, and see if it holds. Questions:
+          <a href="mailto:kyansukhram@gmail.com?subject=Lockout">kyansukhram@gmail.com</a>.
+        </p>
       </div>
     </div>
   </section>
 
+  <div class="stickybar" id="stickybar" hidden>
+    <a class="btn btn--primary btn--block" href="https://apps.apple.com/gb/app/lockout-break-the-habit/id6798917776?ct=web&mt=8" data-store>Get Lockout. Free.</a>
+  </div>
 </main>
 
 <footer class="footer">
@@ -681,7 +672,7 @@
 
     <p class="footer__legal">
       An independent app. Not affiliated with, endorsed by, or sponsored by Apple.
-      Apple, Apple Health, Apple Watch, App Store, Screen Time and TestFlight are
+      Apple, Apple Health, Apple Watch, App Store and Screen Time are
       trademarks of Apple Inc. Instagram, TikTok, YouTube, X, Reddit, Snapchat, Whoop,
       Oura and Garmin are named only to describe apps and devices you may choose to use
       with Lockout; their trademarks belong to their respective owners.
@@ -689,6 +680,6 @@
   </div>
 </footer>
 
-<script src="assets/main.js" defer></script>
+<script src="assets/main.js?v=20260908" defer></script>
 </body>
 </html>

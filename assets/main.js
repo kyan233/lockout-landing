@@ -10,6 +10,28 @@
 
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
 
+  /* ------------------------------------------------------ store links -- */
+
+  /* Every store button carries a campaign tag so App Store Connect can say
+     which bio sent the install: lockout.automateedge.ai/?s=ig_bio → ct=ig_bio.
+     PT is the App Analytics provider token; until it is set the tag is inert
+     but harmless. One constant to fill, no markup to touch. */
+  var STORE = 'https://apps.apple.com/gb/app/lockout-break-the-habit/id6798917776';
+  var PT = '';
+  var source = (new URLSearchParams(window.location.search).get('s') || 'web').replace(/[^a-z0-9_]/gi, '').slice(0, 24) || 'web';
+  var storeHref = STORE + '?' + (PT ? 'pt=' + PT + '&' : '') + 'ct=' + source + '&mt=8';
+  var storeLinks = document.querySelectorAll('[data-store]');
+  for (var k = 0; k < storeLinks.length; k++) storeLinks[k].setAttribute('href', storeHref);
+
+  /* The fixed store bar on phones appears once the hero's buttons scroll away. */
+  var stickybar = document.getElementById('stickybar');
+  var ctaRow = document.querySelector('.cta-row');
+  if (stickybar && ctaRow && 'IntersectionObserver' in window) {
+    new IntersectionObserver(function (entries) {
+      stickybar.hidden = entries[0].isIntersecting;
+    }, { threshold: 0 }).observe(ctaRow);
+  }
+
   /* ---------------------------------------------------------------- nav -- */
 
   var toggle = document.getElementById('navtoggle');
